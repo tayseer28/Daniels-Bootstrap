@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Bootstrap Icons CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" type="image/ico" href="../imgs/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Daniels</title>
+</head>
+
+<body data-spy="scroll" data-target="#nav-bar" data-offset="70">
+
+    <div class="loading-layer vh-100 bg-white position-absolute w-100 z-1">
+        <div class="lds-ring position-absolute top-50 start-50 translate-middle"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- =========================navbar========================= -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg fixed-top bg-white fixed-top">
+        <div class="container pt-3 ">
+            <a class="navbar-brand text-dark h6 text-uppercase" href="#">Daniels</a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black ps-0" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black ps-0 ms-1 " aria-current="page" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black ps-0 ms-1" aria-current="page" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black ps-0 ms-1" aria-current="page" href="#portfolio">work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black ps-0 ms-1" aria-current="page" href="#clients">clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black ps-0 ms-1" aria-current="page" href="#team">team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-black ps-0 ms-1" aria-current="page" href="#contacts">contacts</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================header========================= -->
+    <header id="home" class="vh-100 d-flex justify-content-center align-items-center text-center">
+        <div class="container">
+
+            <div class="text-white">
+                <h1 class="fw-bolder text-capitalize">hello</h1>
+                <div class="display-3 my-4">
+                    <span class="display-4 fw-lighter">I Am</span>
+                    <span class="display-4" id="element"></span>
+                </div>
+
+                <h1 id="element"> </h1>
+                <ul class="nav-list d-flex justify-content-center">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-solid fa-circle fa-stack-2x "></i>
+                                <i class="fa-brands fa-facebook-f text-white fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-solid fa-circle fa-stack-2x "></i>
+                                <i class="fa-brands fa-twitter text-white fa-stack-1x"></i> </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-solid fa-circle fa-stack-2x "></i>
+                                <i class="fa-brands fa-linkedin-in text-white fa-stack-1x"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-solid fa-circle fa-stack-2x "></i>
+                                <i class="fa-brands fa-behance text-white fa-stack-1x"></i> </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-solid fa-circle fa-stack-2x "></i>
+                                <i class="fa-brands fa-youtube text-white fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================about=========================== -->
+    <section id="about" class="about">
+        <div class="container-xl">
+            <div class="content row my-5 py-5 justify-content-center">
+                <div class="main-img col-sm-10 col-lg-4 mt-5 ">
+                    <img src="../imgs/hero.jpg" class="w-100" alt="personal image">
+                </div>
+                <div class="desc col-lg-6">
+                    <h2 class="mt-5">About Me.</h2>
+                    <span>UI / UX DESIGNER & WEB DEVELOPER</span>
+                    <p class="my-4">I am <span class="fw-bold">Jerry Daniels</span> Lorem Ipsum is simply dummy text of
+                        the printing and
+                        typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever It has survived not only five centuries,
+                        but
+                        also the leap into electronic but also the leap into electronic typesetting, remaining
+                        essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+
+                    <div class="progress my-4 h-progress inner-shadow" role="progressbar" aria-label="Success example"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div
+                            class="progress-bar bg-black w-95 d-flex flex-row justify-content-between align-items-center px-2">
+                            <span>Web Design</span>
+                            <span>95%</span>
+
+                        </div>
+                    </div>
+                    <div class="progress my-4 h-progress inner-shadow" role="progressbar" aria-label="Info example"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div
+                            class="progress-bar bg-black w-80 d-flex flex-row justify-content-between align-items-center px-2">
+                            <span>Branding</span>
+                            <span>8o%</span>
+                        </div>
+                    </div>
+                    <div class="progress my-4 h-progress inner-shadow" role="progressbar" aria-label="Warning example"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div
+                            class="progress-bar bg-black w-90 d-flex flex-row justify-content-between align-items-center px-2">
+                            <span>Development</span>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="buttons my-5">
+                        <button type="button " class="btn btn-outline-dark py-2 first">Download C.V</button>
+                        <a href="#contacts">
+
+                            <button type="button" class="btn btn-outline-dark py-2"> Contact Me</button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================services=========================== -->
+    <section id="services" class="services my-5 py-5 ">
+        <div class="container-fluid container-md col-xl-9 text-center ">
+            <div class="title mt-5 mb-4 position-relative">
+                <h2 class="text-uppercase h1">services.
+                </h2>
+                <div class="dots position-absolute"></div>
+            </div>
+            <div class="cards row g-4 my-4">
+
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle my-2">
+                            <i class="fa fa-laptop fs-3" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="mb-3">Web Design</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle  my-2">
+                            <i class="fa fa-bullhorn fs-3" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="mb-3">Branding</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle  my-2">
+                            <i class="fa fa-umbrella fs-3" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="mb-3">Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle  my-2">
+                            <i class="fa-regular fa-gem fs-3"></i>
+                        </div>
+                        <h3 class="mb-3">Creative Design</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle  my-2">
+                            <i class="fa fa-television fs-3" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="mb-3">Fully Responsive</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="card col-lg-4 border-0 bg-light">
+                    <div class="inner bg-white py-5 rounded-3 shadow-sm px-4">
+                        <div
+                            class="icon border-main-color d-flex align-items-center justify-content-center rounded-circle  my-2">
+                            <i class="fa fa-camera fs-2" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="mb-3">Retina Ready</h3>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================portfolio=========================== -->
+    <section id="portfolio" class="portfolio" data-spy="scroll" data-target="#portf-spy">
+        <div class="container-md text-center col-xl-9">
+            <div class="title pt-4 mb-4 position-relative">
+                <h2 class="h1 ">Portfolio.
+                </h2>
+                <div class="dots position-absolute"></div>
+            </div>
+            <ul id="portf-spy" class="nav nav-pills mb-3  justify-content-center position-relative" id="pills-tab" role="tablist">
+                <!-- all -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active bg-transparent text-black fw-bolder position-relative ps-0"
+                        id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true">All</button>
+                </li>
+                <!-- brand -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-black fw-bolder  position-relative" id="pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Brand</button>
+                </li>
+                <!-- Design -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-black fw-bolder position-relative" id="pills-contact-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">Design</button>
+                </li>
+                <!-- graphic -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-black fw-bolder position-relative" id="pills-disabled-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab"
+                        aria-controls="pills-disabled" aria-selected="false">Graphic</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <!-- content start -->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 text-start my-3">
+
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4 ">
+                            <div class="card border-0 ">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/1.jpg" class="card-img-top rounded-0 rounded-0"
+                                        alt="socket">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/2.jpg" class="card-img-top rounded-0" alt="book">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/3.jpg" class="card-img-top rounded-0" alt="braille way">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/4.jpg" class="card-img-top rounded-0" alt="lamp">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/5.jpg" class="card-img-top rounded-0" alt="rulers">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/6.jpg" class="card-img-top rounded-0"
+                                        alt="measuring tools">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- content start -->
+                <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 text-start my-3">
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/4.jpg" class="card-img-top rounded-0" alt="lamp">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/6.jpg" class="card-img-top rounded-0"
+                                        alt="measuring tools">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content start -->
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 text-start my-3">
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/2.jpg" class="card-img-top rounded-0" alt="book">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/5.jpg" class="card-img-top rounded-0" alt="rulers">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content start -->
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 text-start my-3">
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/1.jpg" class="card-img-top rounded-0 rounded-0"
+                                        alt="socket">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/3.jpg" class="card-img-top rounded-0" alt="braille way">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card start -->
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="main-img">
+                                    <img src="../imgs/portfolio/5.jpg" class="card-img-top rounded-0" alt="rulers">
+                                </div>
+                                <div class="caption text-center d-flex flex-column justify-content-center">
+                                    <p class="mb-0">Web Design</p>
+                                    <div class="icons-group d-flex justify-content-center column-gap-2">
+                                        <div class="icon">
+                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================clients=========================== -->
+    <section id="clients" class="clients my-5 py-5">
+        <div class="conatainer text-center">
+            <div class="title  my-4 position-relative">
+                <h2 class="h1">Testimonials.
+                </h2>
+                <div class="dots position-absolute"></div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide mt-5">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="item">
+                            <div class="main-img  m-auto ">
+                                <img src="../imgs/1_New1.jpg" class="d-block w-100 rounded-circle"
+                                    alt="client personal image">
+                            </div>
+                            <p class="m-auto text-muted my-4 px-3">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h3 class="h6">Alex Smith</h3>
+                            <span class="">Envato Customer</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="item">
+                            <div class="main-img col-1 m-auto ">
+                                <img src="../imgs/1_New1.jpg" class="d-block w-100 rounded-circle" alt="...">
+                            </div>
+                            <p class="m-auto text-muted my-4">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h3 class="h6">Alex Smith</h3>
+                            <span class="text-muted">Envato Customer</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="item">
+                            <div class="main-img col-1 m-auto ">
+                                <img src="../imgs/1_New1.jpg" class="d-block w-100 rounded-circle" alt="...">
+                            </div>
+                            <p class="m-auto text-muted my-4">
+                                Lorem Ipsum has been the industry's standard dummy text ever
+                                since the when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </p>
+                            <h3 class="h6">Alex Smith</h3>
+                            <span class="text-muted">Envato Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators position-static my-4">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==============================statistics ======================= -->
+    <section id="work" class="work my-5">
+        <div class="container text-center px-5 py-5">
+
+            <div class="row row-cols-1 my-3">
+                <!-- card start -->
+                <div class="col col-lg-3 ">
+                    <div class="card border-0 text center">
+                        <i class="fa fa-users  fa-2x" aria-hidden="true"></i>
+                        <h3 class="h2 my-4">850</h3>
+                        <p class="">Happy Customers</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="col col-lg-3 ">
+                    <div class="card border-0 text center">
+                        <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+                        <h3 class="h2 my-4">230</h3>
+                        <p class="">Complete Projects </p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="col col-lg-3 ">
+                    <div class="card border-0 text center">
+                        <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
+                        <h3 class="h2 my-4">9450</h3>
+                        <p class="">Lines Of Code</p>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="col col-lg-3 ">
+                    <div class="card border-0 text center">
+                        <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
+                        <h3 class="h2 my-4">780</h3>
+                        <p class="">Files Downloaded</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- =========================team=========================== -->
+    <section id="team" class="py-5">
+        <div class=" container-fluid container-md col-xl-10 text-center">
+            <div class="title py-4 position-relative">
+                <h2 class="h1 position-relative">Our Team.
+                </h2>
+                <div class="dots position-absolute"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-start my-3">
+                <!-- card start -->
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card border-0 position-relative ">
+                        <div class="main-img position-relative">
+                            <img src="../imgs/1.jpg" class="card-img-top rounded-top-0" alt="">
+                            <div class="caption d-flex align-items-center">
+                                <ul class="nav-list d-flex justify-content-center m-auto ps-0 column-gap-2">
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-facebook-f "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-pinterest "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-twitter "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-linkedin-in "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-white rounded-bottom-3">
+                            <div class="desc text-center">
+                                <h3 class="card-title">John Doe</h3>
+                                <h4 class="fw-bolder h5">FRONT-END DEVELOPER</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card border-0 ">
+                        <div class="main-img position-relative">
+                            <img src="../imgs/2.jpg" class="card-img-top rounded-top-0" alt="">
+                            <div class="caption d-flex align-items-center">
+                                <ul class="nav-list d-flex justify-content-center m-auto ps-0  col-md-6umn-gap-2">
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-facebook-f "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-pinterest "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-twitter "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-linkedin-in "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-white rounded-bottom-3">
+                            <div class="desc text-center">
+                                <h3 class="card-title">Dave Wood</h3>
+                                <h4 class="fw-bolder h5">BACK-END DEVELOPER</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card border-0 ">
+                        <div class="main-img position-relative">
+                            <img src="../imgs/1.jpg" class="card-img-top rounded-top-0" alt="">
+                            <div class="caption d-flex align-items-center">
+                                <ul class="nav-list d-flex justify-content-center m-auto ps-0 column-gap-2">
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-facebook-f "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-pinterest "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-twitter "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div
+                                                class="icon rounded-circle d-flex justify-content-center align-items-center">
+                                                <i class="fa-brands fa-linkedin-in "></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body text-white rounded-bottom-3">
+                            <div class="desc text-center">
+                                <h3 class="card-title">Claire Chedd</h3>
+                                <h4 class="fw-bolder h5">BACK-END DEVELOPER</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- =========================contacts======================== -->
+    <section id="contacts" class="text-center my-5">
+        <div class="container-lg col-xl-9 px-lg-5 w">
+            <div class="title my-4 position-relative">
+                <h2 class="h1 ">
+                    Contact Us.
+                </h2>
+                <div class="dots position-absolute"></div>
+            </div>
+            <div class="container px-5">
+                <div class="row ">
+
+                    <!-- col start -->
+                    <div class="col col-sm-12 col-lg-4">
+                        <div class="item">
+                            <div class="icon m-auto my-3">
+                                <i class="fa fa-location-arrow fs-4" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Address</h3>
+                            <p class="text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+                        </div>
+
+                    </div>
+                    <!-- col start -->
+                    <div class="col col-sm-12 col-lg-4">
+                        <div class="item">
+                            <div class="icon m-auto my-3">
+                                <i class="fa fa-envelope fs-4" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Email</h3>
+                            <p class="text-muted">Support@website.com</p>
+                        </div>
+                    </div>
+                    <!-- col start -->
+                    <div class="col col-sm-12 col-lg-4">
+                        <div class="item">
+                            <div class="icon m-auto my-3">
+                                <i class="fa fa-phone fs-5" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Phone</h3>
+                            <p class="text-muted">+20 010 2517 8918</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- form start -->
+            <form>
+                <div class="container-md text-start">
+                    <div class="row g-4 mt-5 mb-3">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="inner">
+                                <input class="w-100 p-2 border-0 rounded-2 text-muted" type="text" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-lg-6">
+                            <div class="inner">
+                                <input class="w-100 p-2 border-0 rounded-2 text-muted" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- did not use form-control because of the outline -->
+                    <textarea placeholder="Message" name="Message" rows="6"
+                        class=" d-block col-12 border-0 p-2 rounded-2 text-muted" id="message"></textarea>
+
+                    <button type="submit" class="btn btn-outline-dark my-4">Submit</button>
+
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- =========================footer======================== -->
+
+    <footer class="py-4 text-center">
+        <p class="pt-2">Copy Right 2018 © By Daniels All Rights Reserved</p>
+    </footer>
+
+
+    <!-- Element to contain animated typing -->
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Larry Daniels", "Developer", "Designer"],
+            typeSpeed: 50,
+        });
+    </script>
+    <script> $('body').scrollspy({ target: '#nav-bar' }) </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
